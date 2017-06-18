@@ -16,8 +16,13 @@ library(dplyr)
 #                        Global Variables
 #
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+# Assume that this program is run from the directory where the data has
+# been extracted to. This is stated as a requirement when submitting the
+# program for peer review.
 
-dir_proj_data <- 'C:/temp/UCI HAR Dataset'
+this.dir <- dirname(parent.frame(2)$ofile)
+setwd(this.dir)
+dir_proj_data <- this.dir
 
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 #

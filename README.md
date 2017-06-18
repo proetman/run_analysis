@@ -11,12 +11,11 @@ output: html_document
 
 ### Run Analyse
 
-The program run_analyse.R can be run in any R environment. Before running, the global variable need to be configured at the beginning of the program. This variable defines where the data will be read from, and where the results will be written.
+The program run_analyse.R can be run in any R environment. The program makes the assumption that the code is in the directory where the data has been extracted. For example, if the data is in this directory:
+    "c:\temp\UCI HAR Dataset"
+then copy the run_analysis.R program to this directory as well.
 
-```{r}
-dir_proj_data <- 'C:/temp/UCI HAR Dataset'
-```
-To run the program:
+To run the program, load the R environment then:
 
 ```{r}
 source('run_analysis.R')
